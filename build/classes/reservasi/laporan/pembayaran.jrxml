@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6cccbf43-a564-4847-ab0a-a3b703c5ae86">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from pembayaran
+]]>
+	</queryString>
+	<field name="No_Pembayaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal_Pembayaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="No_Pemesanan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal_Pemesanan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="No_Costumer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Costumer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="No_Pol" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jenis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Merk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Seat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Total_Biaya" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Uang_Muka" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="301" y="41" width="467" height="53" uuid="5d0357c8-9ffb-47cc-bf8b-1a65d01d72c7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="11"/>
+				</textElement>
+				<text><![CDATA[JALAN H KEBON BARU V NO. 21 RT 010 / RW 009
+KEL. KEBON BARU KEC. TEBET
+JAKARTA SELATAN 12830
+TELP : 089674885474]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="6" width="467" height="34" uuid="594be236-07e0-435b-b4be-32a779113a6c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="28"/>
+				</textElement>
+				<text><![CDATA[DJESSTRANSWISATA]]></text>
+			</staticText>
+			<image>
+				<reportElement x="34" y="20" width="209" height="64" uuid="e1e35575-38f7-492d-b215-9f26cc978ca9"/>
+				<imageExpression><![CDATA["D:\\Workshop\\Reservasi\\build\\classes\\reservasi\\gambar\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="2" width="796" height="20" backcolor="#FF3333" uuid="b0336004-ef87-4414-bb7e-ba0349e6ee94"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="14"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PEMBAYARAN DJESSTRANSWISATA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="66" height="20" uuid="b2cba18b-14ef-486e-a7ac-e84cbf02d98c"/>
+				<text><![CDATA[No Pembayaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="0" width="66" height="20" uuid="a69f0267-9457-4888-be74-e1faaf589ef3"/>
+				<text><![CDATA[Tanggal Pembayaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="0" width="66" height="20" uuid="b75781bf-4133-44a9-9b50-4392ac1dbcae"/>
+				<text><![CDATA[No Pemesanan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="198" y="0" width="66" height="20" uuid="047a2993-308e-4f5b-8a5b-3273c7bf0880"/>
+				<text><![CDATA[Tanggal Pemesanan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="264" y="0" width="66" height="20" uuid="9a277a56-0bb6-4273-9de4-f73cf768b4ec"/>
+				<text><![CDATA[No Costumer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="66" height="20" uuid="4943829e-c650-46f8-9ef1-8ac9761e9360"/>
+				<text><![CDATA[Nama Costumer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="0" width="66" height="20" uuid="1ebb8d17-4d06-45a5-8319-e08a16c5d224"/>
+				<text><![CDATA[No Pol]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="462" y="0" width="66" height="20" uuid="c1accd3b-1959-46f4-a4eb-e25ce66e5a3d"/>
+				<text><![CDATA[Jenis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="528" y="0" width="66" height="20" uuid="81c31a25-243c-46c8-a748-c6c8b65a93d2"/>
+				<text><![CDATA[Merk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="594" y="0" width="66" height="20" uuid="99004e51-dd2d-4619-b0a8-cf8d7638fc03"/>
+				<text><![CDATA[Seat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="660" y="0" width="66" height="20" uuid="3d9ad00e-f3f6-473f-8665-589eebb576fe"/>
+				<text><![CDATA[Total Biaya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="726" y="0" width="66" height="20" uuid="bd7d3299-b1af-4663-8256-e53d3218c7d2"/>
+				<text><![CDATA[Uang Muka]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="24" width="799" height="1" backcolor="#FFFFFF" uuid="219c09fa-5c74-48e8-95f1-471bb76f4a4a"/>
+				<graphicElement>
+					<pen lineColor="#FF0000"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="66" height="20" uuid="e472199a-6ce1-46be-8b4e-62bbb5273666"/>
+				<textFieldExpression><![CDATA[$F{No_Pembayaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="0" width="66" height="20" uuid="eb380a79-16f9-46de-addf-73ae343fcbfd"/>
+				<textFieldExpression><![CDATA[$F{Tanggal_Pembayaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="132" y="0" width="66" height="20" uuid="1514ccfa-e5ee-4d81-adfd-011dc52ab52d"/>
+				<textFieldExpression><![CDATA[$F{No_Pemesanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="198" y="0" width="66" height="20" uuid="224de3d4-4867-408d-afb0-033d96a84d13"/>
+				<textFieldExpression><![CDATA[$F{Tanggal_Pemesanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="0" width="66" height="20" uuid="b81168c5-f69e-453c-96d9-f27d7f35409f"/>
+				<textFieldExpression><![CDATA[$F{No_Costumer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="66" height="20" uuid="49ed8f99-c93e-48b5-83ca-59da894c68d6"/>
+				<textFieldExpression><![CDATA[$F{Nama_Costumer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="396" y="0" width="66" height="20" uuid="4d915d0d-bd0d-4f2b-9d9a-1e1825b8c25a"/>
+				<textFieldExpression><![CDATA[$F{No_Pol}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="462" y="0" width="66" height="20" uuid="0bc840f0-3edb-4261-b618-b48c434379fe"/>
+				<textFieldExpression><![CDATA[$F{Jenis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="528" y="0" width="66" height="20" uuid="4569a9d9-e95d-409c-afcd-36d5b9ad9128"/>
+				<textFieldExpression><![CDATA[$F{Merk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="594" y="0" width="66" height="20" uuid="666256c9-ef67-4fac-afcd-981ba0293ed9"/>
+				<textFieldExpression><![CDATA[$F{Seat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="660" y="0" width="66" height="20" uuid="ebff219f-eea8-47ff-803b-b50eacced4db"/>
+				<textFieldExpression><![CDATA[$F{Total_Biaya}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="726" y="0" width="66" height="20" uuid="50375776-1ada-42af-9b99-1c6cc9aba0fb"/>
+				<textFieldExpression><![CDATA[$F{Uang_Muka}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="100" splitType="Stretch">
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="655" y="0" width="148" height="20" uuid="6fc3e0c0-7592-48d1-8035-51aa6b13669c"/>
+				<textElement>
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="613" y="0" width="42" height="20" uuid="36dd97ad-56d5-46e8-b3ea-acd9832eee76"/>
+				<textElement>
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="559" y="80" width="209" height="20" uuid="00896ed6-b01c-46ed-a4e7-dafb0f9f82e5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<text><![CDATA[HENI ARDIANA]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>

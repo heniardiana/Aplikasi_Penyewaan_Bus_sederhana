@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c9229c0c-3aae-4133-8f48-32380a9e4e7b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from costumer]]>
+	</queryString>
+	<field name="No_Costumer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Costumer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Telpon_Costumer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Alamat_Costumer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="165" y="45" width="361" height="54" uuid="f947043d-4f10-4c14-b27a-1e1c3b1fed17"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="11"/>
+				</textElement>
+				<text><![CDATA[JALAN H KEBON BARU V NO. 21 RT 010 / RW 009
+KEL. KEBON BARU KEC. TEBET
+JAKARTA SELATAN 12830
+TELP : 089674885474]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="165" y="10" width="361" height="35" uuid="d1331cfd-8684-4d60-9885-e91f23df2847"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="28"/>
+				</textElement>
+				<text><![CDATA[DJESSTRANSWISATA]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="25" width="142" height="52" uuid="1438b721-286e-42b1-bca6-658a44e38782"/>
+				<imageExpression><![CDATA["D:\\Workshop\\Reservasi\\build\\classes\\reservasi\\gambar\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="7" y="4" width="542" height="20" backcolor="#FF3333" uuid="62aade20-2804-4616-8ccf-8faecff30044"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="14"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA COSTUMER DJESSTRANSWISATA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="0" width="138" height="20" uuid="d9dfa46f-1310-4171-b38a-46f93d982d5d"/>
+				<text><![CDATA[No Costumer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="0" width="138" height="20" uuid="27986406-7908-4044-bb4a-be3fc7d9a6e4"/>
+				<text><![CDATA[Nama Costumer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="0" width="138" height="20" uuid="630cbd1d-6cc6-424a-bd67-1bf6f0578e3a"/>
+				<text><![CDATA[Telpon Costumer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="0" width="138" height="20" uuid="4266f347-5ff8-4f29-aa02-a9400884e6bd"/>
+				<text><![CDATA[Alamat Costumer]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="24" width="552" height="1" backcolor="#FFFFFF" uuid="036199d4-555b-4980-bb85-81a5ff85204a"/>
+				<graphicElement>
+					<pen lineColor="#FF0000"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="0" width="138" height="20" uuid="19348bd7-5fc4-441c-a445-451671d875c8"/>
+				<textFieldExpression><![CDATA[$F{No_Costumer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="138" height="20" uuid="32047cb0-95b4-4923-92ac-8a7217530aec"/>
+				<textFieldExpression><![CDATA[$F{Nama_Costumer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="0" width="138" height="20" uuid="4d602fbe-9803-4266-8a48-65f16c9a13fb"/>
+				<textFieldExpression><![CDATA[$F{Telpon_Costumer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="416" y="0" width="138" height="20" uuid="bfe06d62-b11b-435d-97ca-06166a9a18e3"/>
+				<textFieldExpression><![CDATA[$F{Alamat_Costumer}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="100" splitType="Stretch">
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="401" y="0" width="148" height="20" uuid="c0d42461-1d42-486d-8ccb-df7ef627b360"/>
+				<textElement>
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="359" y="0" width="42" height="20" uuid="f44db54d-0e19-45c5-95ac-b1ecc0666385"/>
+				<textElement>
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="304" y="80" width="209" height="20" uuid="2468954a-2170-4ce5-871e-778bda5e0646"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<text><![CDATA[HENI ARDIANA]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>

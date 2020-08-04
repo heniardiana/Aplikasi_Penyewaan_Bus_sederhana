@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="02fcbf02-647e-4d7e-8b9c-3a0ccbc06dad">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from bus]]>
+	</queryString>
+	<field name="No_Pol" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jenis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Merk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Seat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Kondisi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Id_Driver" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Driver" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Telpon_Driver" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<image>
+				<reportElement x="11" y="24" width="142" height="52" uuid="42fac405-d0cc-46e3-a90d-224141162c1a"/>
+				<imageExpression><![CDATA["D:\\Workshop\\Reservasi\\build\\classes\\reservasi\\gambar\\logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="174" y="10" width="361" height="35" uuid="21a92b9d-bea3-4a3a-9f57-13ffe97c476d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="28"/>
+				</textElement>
+				<text><![CDATA[DJESSTRANSWISATA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="45" width="361" height="54" uuid="a41ba3f1-2013-41ba-b327-5f9e9ca4864a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="11"/>
+				</textElement>
+				<text><![CDATA[JALAN H KEBON BARU V NO. 21 RT 010 / RW 009
+KEL. KEBON BARU KEC. TEBET
+JAKARTA SELATAN 12830
+TELP : 089674885474]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="6" y="4" width="542" height="20" backcolor="#FF3333" uuid="0a25c810-bddc-45c7-9868-8e5923701d7c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="14"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA BUS DJESSTRANSWISATA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="4" y="0" width="69" height="20" uuid="8c4e996b-c3b8-4b5a-b18f-69bba2466b89"/>
+				<text><![CDATA[No Pol]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="0" width="69" height="20" uuid="62b3a06a-f3be-49e3-b8c0-d1c9f2233fff"/>
+				<text><![CDATA[Jenis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="0" width="69" height="20" uuid="c033cccc-a4a4-4fc3-b6a3-9d12aac05026"/>
+				<text><![CDATA[Merk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="0" width="69" height="20" uuid="06e5c523-bf86-4428-9a14-3b3259aeae37"/>
+				<text><![CDATA[Seat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="69" height="20" uuid="89d5c41a-340b-4a19-9434-0fff36218b67"/>
+				<text><![CDATA[Kondisi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="0" width="69" height="20" uuid="85b12198-09dc-4ecb-a43d-712f7094f81e"/>
+				<text><![CDATA[Id Driver]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="0" width="69" height="20" uuid="62192148-5064-4c0a-93ba-1d8db56d8485"/>
+				<text><![CDATA[Nama Driver]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="487" y="0" width="69" height="20" uuid="1bbb1f27-f172-4f5a-9586-d4e96acd71b2"/>
+				<text><![CDATA[Telpon Driver]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="24" width="552" height="1" backcolor="#FFFFFF" uuid="201e2174-cc4d-42c5-9fb0-c4030c9f3f55"/>
+				<graphicElement>
+					<pen lineColor="#FF0000"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="4" y="0" width="69" height="20" uuid="6025a823-fca1-4691-a113-7d63d0a836e7"/>
+				<textFieldExpression><![CDATA[$F{No_Pol}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="0" width="69" height="20" uuid="670d990e-511c-4de9-9409-83a32fd80eda"/>
+				<textFieldExpression><![CDATA[$F{Jenis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="142" y="0" width="69" height="20" uuid="de88f023-e3ad-4ee0-a4ee-236710715329"/>
+				<textFieldExpression><![CDATA[$F{Merk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="211" y="0" width="69" height="20" uuid="597da3ab-dd8d-4520-866a-908cdf4f7a54"/>
+				<textFieldExpression><![CDATA[$F{Seat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="69" height="20" uuid="871affea-d0ae-4706-9942-9b54504d1d02"/>
+				<textFieldExpression><![CDATA[$F{Kondisi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="349" y="0" width="69" height="20" uuid="3462063d-373b-4a4f-9af2-84b3112f4098"/>
+				<textFieldExpression><![CDATA[$F{Id_Driver}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="418" y="0" width="69" height="20" uuid="24f4ebba-e14c-4836-a668-86b56edc315c"/>
+				<textFieldExpression><![CDATA[$F{Nama_Driver}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="487" y="0" width="69" height="20" uuid="9d749b22-9dd6-4275-aff9-7679c85f0a77"/>
+				<textFieldExpression><![CDATA[$F{Telpon_Driver}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="100" splitType="Stretch">
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="406" y="0" width="148" height="20" uuid="9f7e2927-428d-43ad-9151-e3d3ab7c64ea"/>
+				<textElement>
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="339" y="80" width="209" height="20" uuid="fb611186-f80c-4246-a114-517791574710"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<text><![CDATA[HENI ARDIANA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="0" width="42" height="20" uuid="cce483f0-57a0-4864-802a-a69338000d36"/>
+				<textElement>
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>

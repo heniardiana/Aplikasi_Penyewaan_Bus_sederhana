@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ccff3e6f-434b-48e4-bab2-949f7b8da714">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from driver]]>
+	</queryString>
+	<field name="Id_Driver" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Driver" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Telpon_Driver" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Alamat_Driver" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="174" y="10" width="361" height="35" uuid="73291ab5-0cdb-4db7-9654-b1c9e0ef120e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="28"/>
+				</textElement>
+				<text><![CDATA[DJESSTRANSWISATA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="45" width="361" height="54" uuid="e4c936cd-aea1-4ab8-94d5-828c2690b7be"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="11"/>
+				</textElement>
+				<text><![CDATA[JALAN H KEBON BARU V NO. 21 RT 010 / RW 009
+KEL. KEBON BARU KEC. TEBET
+JAKARTA SELATAN 12830
+TELP : 089674885474]]></text>
+			</staticText>
+			<image>
+				<reportElement x="19" y="25" width="142" height="52" uuid="27797115-1574-4c7e-b462-b8572ab771ac"/>
+				<imageExpression><![CDATA["D:\\Workshop\\Reservasi\\build\\classes\\reservasi\\gambar\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="6" y="5" width="542" height="20" backcolor="#FF3333" uuid="8fdd6120-34b9-4050-be07-b74a6d687e8f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="14"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA DRIVER DJESSTRANSWISATA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="0" width="138" height="20" uuid="e77806ec-5d61-4bd8-a914-e9826b479ee0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="10"/>
+				</textElement>
+				<text><![CDATA[Id Driver]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="0" width="138" height="20" uuid="a30259b4-0316-4d2b-98c1-761ba812b3f1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="10"/>
+				</textElement>
+				<text><![CDATA[Nama Driver]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="0" width="138" height="20" uuid="0feddf15-f3dd-4a6c-8620-8fcfe820b87e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="10"/>
+				</textElement>
+				<text><![CDATA[Telpon Driver]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="0" width="138" height="20" uuid="63b53bc2-94b4-4730-8d70-e6d242296ca1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="10"/>
+				</textElement>
+				<text><![CDATA[Alamat Driver]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="24" width="552" height="1" backcolor="#FFFFFF" uuid="53f76211-c0a8-4e67-b839-34944611eebd"/>
+				<graphicElement>
+					<pen lineColor="#FF0000"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="0" width="138" height="20" uuid="50434840-2d5b-41f6-929a-92d5cecc3f29"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Id_Driver}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="138" height="20" uuid="e1d17483-f5be-468f-b5d4-29c6aee3d381"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nama_Driver}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="0" width="138" height="20" uuid="ad10bb21-c7e8-4b10-978c-09c3dae317f0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Telpon_Driver}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="416" y="0" width="138" height="20" uuid="307865db-9371-49eb-9a72-8872078815cd"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Alamat_Driver}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="364" y="0" width="42" height="20" uuid="f8fe411d-4fba-4d36-a79a-c2199b84ccf3"/>
+				<textElement>
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="406" y="0" width="148" height="20" uuid="c7094389-bffa-415a-bd4f-5791776f2767"/>
+				<textElement>
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="312" y="80" width="209" height="20" uuid="ce186e14-2e50-4c3a-9982-fdf2365d0fe4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Schoolbook" size="12"/>
+				</textElement>
+				<text><![CDATA[HENI ARDIANA]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>
